@@ -16,13 +16,13 @@ function Contact() {
             <div>
               <FaRegEnvelope className="icons" /> <br />
               <br />
-              <p class="contact1">
-                <a href="mailto:bhatrohin003@gmail.com">
+              <p className="contact1">
+                <a className="contact1" href="mailto:bhatrohin003@gmail.com">
                   bhatrohin003@gmail.com
                 </a>
               </p>
-              <p class="contact1">
-                <a href="mailto:rajnandiniab@gmail.com">
+              <p className="contact1">
+                <a className="contact1" href="mailto:rajnandiniab@gmail.com">
                   rajnandiniab@gmail.com
                 </a>
               </p>
@@ -30,7 +30,7 @@ function Contact() {
               <FaPhoneAlt className="icons" />
               <br />
               <br />
-              <p>
+              <p className="phone1">
                 Rohin Bhatt - 9146458797 <br />
                 Rajnandini Baheti - 9307960515
               </p>
@@ -50,7 +50,7 @@ function Contact() {
 
 const Contact1 = styled.section`
   .rectangle {
-    height: 400px;
+    height: 360px;
     width: 40%;
     background: white;
     -webkit-box-shadow: 0 0 10px 10px var(--lightPurple);
@@ -68,20 +68,24 @@ const Contact1 = styled.section`
       color: var(--purple);
       margin-top: -8%;
     }
-    p {
+    a {
       font-family: "Cabin", sans-serif;
       font-size: 1rem;
       margin-top: -3%;
+      color:var(--prussian);
     }
   }
   .icons {
     color: #674ea7;
     font-size: 1.3rem;
-    margin-top: 3%;
+    margin-top: 1%;
     &:hover {
       font-size: 1.5rem;
       color: var(--purple);
     }
+  }
+  .phone1{
+    margin-top:-3%;
   }
   .ic {
     color: #674ea7;

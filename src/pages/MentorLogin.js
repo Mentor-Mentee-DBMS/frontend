@@ -260,6 +260,9 @@ const MentorWrapper = styled.section`
     }
   }
   @media only screen and (max-width: 700px) {
+    .LoginImage {
+      display: none;
+    }
     .LoginRect {
       height: 450px;
       width: 320px;
@@ -377,7 +380,7 @@ const MentorWrapper = styled.section`
       }
     }
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 530px) {
     .LoginRect {
       height: 90%;
       width: 75%;

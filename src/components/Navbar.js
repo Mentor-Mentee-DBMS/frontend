@@ -77,9 +77,9 @@ const NavContainer = styled.nav`
   .heading {
     position: absolute;
     left: 2%;
-    top: 1%;
+    top: 4%;
     font-family: "Tangerine", cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--darkGrey);
     z-index: 1;
   }
@@ -171,9 +171,9 @@ const NavContainer = styled.nav`
     .heading {
       position: absolute;
       left: 2%;
-      top: 1%;
+      top: 4%;
       font-family: "Tangerine", cursive;
-      font-size: 5rem;
+      font-size: 3rem;
       color: var(--darkGrey);
       z-index: 1;
     }
@@ -187,7 +187,7 @@ const NavContainer = styled.nav`
       ${"" /* margin-bottom:10%; */}
       z-index:1;
       .heading {
-        font-size: 5rem;
+        font-size: 3rem;
         margin-top: -10%;
       }
     }
@@ -220,6 +220,13 @@ const NavContainer = styled.nav`
         }
       }
     }
+  }
+  @media only screen and (min-width: 1240px)
+  {
+     .heading{
+       font-size:3rem;
+       top:4%;
+     }
   }
 `;
 

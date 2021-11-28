@@ -48,8 +48,9 @@ function Footer() {
           <div className="what">
             <h1>MentorCare</h1>
             <p>
-              Advice is like snow, the softer it falls, the longer it dwells
-              upon, and the deeper it sinks into the mind.
+              Advice is like snow, the softer it falls, the longer <br/>
+              it dwells upon, and the deeper it sinks into the mind.
+              
             </p>
           </div>
 
@@ -73,13 +74,14 @@ const Foot = styled.section`
   }
   .footer-rect {
     width: 100%;
+    height:240px;
     ${
       "" /* background-image: linear-gradient(to bottom,#CAC5EB,#F0F6FF,#FBFAFF); */
     }
     ${"" /* margin-top:30%; */}
     background-image: linear-gradient(to bottom,#EFF6FF,#FCFBFF);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
   }
   ${
@@ -101,11 +103,11 @@ const Foot = styled.section`
   .what {
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 2%;
+    margin-top: 5%;
     align-content: center;
     h1 {
       font-family: "Tangerine", cursive;
-      font-size: 5rem;
+      font-size: 3rem;
       background-clip: text;
       background: -webkit-linear-gradient(
         90deg,
@@ -123,27 +125,29 @@ const Foot = styled.section`
   }
   .feedback-rect {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 20%;
+    flex-direction: column;
+    ${'' /* justify-content: space-between; */}
+    margin: 0 5%;
     margin-bottom: 2%;
   }
   .feedback {
     h4 {
       font-family: "Cabin", sans-serif;
-      font-size: 1.2rem;
+      ${'' /* font-size: 0.5rem; */}
       color: #674ea7;
       text-align: center;
     }
   }
   .about {
-    margin-top: 1rem;
+    margin-top: 80%;
+    font-size:1.2rem;
     &:hover {
       color: var(--purple);
     }
   }
   .feed {
-    margin-top: 1rem;
+    margin-top: 10%;
+    font-size:1.2rem;
     &:hover {
       color: var(--purple);
     }
@@ -152,7 +156,7 @@ const Foot = styled.section`
   @media only screen and (max-width: 600px) {
     .what {
       h1 {
-        font-size: 4rem;
+        font-size: 3rem;
       }
       p {
         font-size: 0.9rem;
@@ -162,6 +166,7 @@ const Foot = styled.section`
 
   @media only screen and (max-width: 400px) {
     .footer-rect {
+      display:flex;
       flex-direction: column;
     }
     .social-icons {
@@ -172,7 +177,7 @@ const Foot = styled.section`
     }
     .what {
       h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
       p {
         font-size: 0.7rem;
@@ -181,16 +186,18 @@ const Foot = styled.section`
     .feedback {
       h4 {
         font-family: "Cabin", sans-serif;
-        font-size: 0.8rem;
+        
         color: #674ea7;
 
         margin-left: -3%;
       }
     }
     .about {
+      font-size: 0.8rem;
       margin-top: 5%;
     }
     .feed {
+      font-size: 0.8rem;
       margin-top: 5%;
     }
   }

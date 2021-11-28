@@ -76,7 +76,7 @@ const MentorWrapper = styled.section`
 .container
 {
    width:100%;
-   height:100vh;
+   height:800px;;
    position:relative;
    z-index:-1;
    background-position: center;
@@ -91,7 +91,7 @@ const MentorWrapper = styled.section`
     position:absolute;
     border-radius:20px;
     top:10%;
-    left:10%;
+    left:5%;
     -webkit-box-shadow: 0 0 10px 10px var(--lightPurple);
     -moz-box-shadow: 0 0 10px 10px var(--lightPurple);
     box-shadow: 0 0 10px 10px var(--lightPurple);
@@ -342,6 +342,9 @@ const MentorWrapper = styled.section`
 }
 @media only screen and (max-width: 700px)
 {
+    .LoginImage{
+       display:none;
+   }
     .LoginRect{
     height:450px;
     width:320px;
@@ -419,11 +422,11 @@ input{
             right:8%;
             top:75%;
             h4{
-                font-size:1.3rem;
+                font-size:1rem;
                 color:var(--darkGrey);
             }
             button{
-                padding:10px 50px;
+                padding:10px 30px;
                 background:var(--orange);
                 border:none;
                 border-radius:20px;
@@ -574,7 +577,7 @@ input{
         }
 
 }
-@media only screen and (max-width: 506px)
+@media only screen and (max-width: 530px)
 {
     input{
             background:var(--lightPurple);
@@ -753,7 +756,7 @@ input{
         }
 
 }
-@media only screen and (max-width: 506px)
+@media only screen and (max-width: 530px)
 {
     input{
             background:var(--lightPurple);
@@ -901,7 +904,7 @@ input{
 
 }
 
-@media only screen and (max-width: 300px)
+@media only screen and (max-width: 330px)
 {
 
    .LoginRect{

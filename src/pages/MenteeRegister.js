@@ -575,7 +575,7 @@ input{
         }
 
 }
-@media only screen and (max-width: 506px)
+@media only screen and (max-width: 530px)
 {
     input{
             background:var(--lightPurple);
@@ -686,7 +686,7 @@ input{
         
 
 }
-@media only screen and (max-width: 420px)
+@media only screen and (max-width: 440px)
 {
     .Lheading{    
             font-size:1.5rem;
@@ -902,7 +902,7 @@ input{
 
 }
 
-@media only screen and (max-width: 300px)
+@media only screen and (max-width: 330px)
 {
 
    .LoginRect{
@@ -949,7 +949,7 @@ input{
 
 
 }
-@media only screen and (max-width: 290px)
+@media only screen and (max-width: 295px)
 {
     input{
             background:var(--lightPurple);

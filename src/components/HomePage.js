@@ -19,11 +19,13 @@ function HomePage() {
           <div className="text">
             {/* <h2 className="topic">Name</h2> */}
             <p className="para">
-              Mentors are student-centred teachers, friends, or guides who
+              Mentors are student-centred teachers,  
               <br />
-              assist young learners during transitional periods and difficult
+              friends, or guides who assist young  
               <br />
-              academic times.
+              learners during transitional periods 
+              <br/>
+              and difficult academic times.
             </p>
             <button className="get_started_btn">
               <Link to="/FindMentor">
@@ -91,12 +93,12 @@ const Home = styled.section`
   }
   .text {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 10%;
   }
   .topic {
     font-family: "tangerine", cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--purple);
   }
   .para {
@@ -320,7 +322,7 @@ const Home = styled.section`
   }
   @media only screen and (max-width: 768px) {
     .text {
-      top: 32%;
+      top: 40%;
     }
     .mento {
       top: 37%;
@@ -814,6 +816,7 @@ const Home = styled.section`
       z-index: -1;
     }
   }
+
 `;
 
 export default HomePage;

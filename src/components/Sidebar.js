@@ -52,7 +52,7 @@ const SidebarContainer = styled.div`
     padding: 1rem 1.5rem;
     h1{
       font-family:'tangerine',cursive;
-      font-size:5rem;
+      font-size:3rem;
       color:var(--heading);
     }
   }

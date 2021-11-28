@@ -43,6 +43,67 @@ const Search = styled.section`
     font-family: "Cabin", sans-serif;
     color: var(--lightGrey);
   }
+
+  .Searchbtn{
+    padding:6px 15px;
+    background:var(--purple);
+    border:none;
+    color:white;
+}
+.searchicon{
+    font-size:1rem;
+}
+
+@media only screen and (max-width: 800px)
+{
+    .mentorsearch{
+    margin-top:15%;
+}
+.searchbar{
+    width:60%;
+}
+}
+
+@media only screen and (max-width: 600px)
+{
+    .mentorsearch{
+    margin-top:20%;
+}
+.searchbar{
+    width:70%;
+}
+}
+@media only screen and (max-width: 480px)
+{
+    .mentorsearch{
+    margin-top:25%;
+}
+.searchbar{
+    width:75%;
+}
+}
+
+@media only screen and (max-width: 380px)
+{
+    .mentorsearch{
+    margin-top:30%;
+}
+.searchbar{
+    width:80%;
+}
+}
+@media only screen and (max-width: 300px)
+{
+    .mentorsearch{
+    margin-top:36%;
+}
+.searchbar{
+    width:80%;
+}
+}
+
+@media only screen and (max-width: 290px)
+{
   .Searchbtn {
     padding: 6px 15px;
     background: var(--purple);
@@ -52,6 +113,7 @@ const Search = styled.section`
   .searchicon {
     font-size: 1rem;
   }
+}
 `;
 
 export default searchMentor;
