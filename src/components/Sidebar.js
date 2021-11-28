@@ -1,47 +1,49 @@
-import React from 'react'
-import { useMMContext } from '../context/MM_context'
-import { Link } from 'react-router-dom'
-import { FaTimes } from 'react-icons/fa'
-import { links } from '../utils/constants'
-import styled from 'styled-components'
-import MentorLogin from './MentorLogin'
-
+import { FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import MentorLogin from "./MentorLogin";
+import React from "react";
+import { links } from "../utils/constants";
+import styled from "styled-components";
+import { useMMContext } from "../context/MM_context";
 
 const Sidebar = () => {
-
-const {isSidebarOpen,closeSidebar} = useMMContext();
-
+  const { isSidebarOpen, closeSidebar } = useMMContext();
 
   return (
     <SidebarContainer>
-    
-      <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
-       <div className='sidebar-header'>
-         <h1>Lorem</h1>
-         <button className='close-btn' type='button' onClick={closeSidebar}>
-           <FaTimes/>
-         </button>
-       </div>
-       <ul className="links">
-         {links.map(({id,text,url})=>{
-           return <li key={id}>
-             <Link to={url} onClick={closeSidebar}>{text}</Link>
-           </li>
-         })}
-    
-       </ul>
-       <MentorLogin className="mm"/>
-
-       </aside>
+      <aside
+        className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
+      >
+        <div className="sidebar-header">
+          <h1>MentorCare</h1>
+          <button className="close-btn" type="button" onClick={closeSidebar}>
+            <FaTimes />
+          </button>
+        </div>
+        <ul className="links">
+          {links.map(({ id, text, url }) => {
+            return (
+              <li key={id}>
+                <Link to={url} onClick={closeSidebar}>
+                  {text}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        <MentorLogin className="mm" />
+      </aside>
     </SidebarContainer>
-  )
-}
+  );
+};
 
 const SidebarContainer = styled.div`
- ${'' /* .mm{
+ ${
+   "" /* .mm{
    diplay:flex;
    flex-direction:column;
- } */}
+ } */
+ }
   text-align: center;
   .sidebar-header {
     display: flex;
@@ -124,7 +126,6 @@ const SidebarContainer = styled.div`
       display: none;
     }
   }
-`
+`;
 
-export default Sidebar
-
+export default Sidebar;

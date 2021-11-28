@@ -1,54 +1,74 @@
-import React from 'react'
-import styled from 'styled-components'
-import mentee from '../assets/menteeLoginImage.png'
-import mentor from '../assets/mentorMentee11.png'
-import hero from '../assets/Rectangle 3.jpg'
-import { Link } from 'react-router-dom'
-import { FaArrowLeft } from 'react-icons/fa'
+import { FaArrowLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import React from "react";
+import hero from "../assets/Rectangle 3.jpg";
+import mentor from "../assets/mentorMentee11.png";
+import styled from "styled-components";
 
 function MentorRegister() {
-    return <MentorWrapper>
-        <section className="menteeL">
-           <div>
-           <div className="both">
-               <img className="LoginImage" src={mentor}/>
-               
-               <div className="LoginRect">
-               <div><Link to="/"><FaArrowLeft className="arrow"/></Link></div>
-                   <h2 className="Lheading">MENTOR SIGN UP</h2>
+  return (
+    <MentorWrapper>
+      <section className="menteeL">
+        <div>
+          <div className="both">
+            {/* eslint-disable-next-line */}
+            <img className="LoginImage" src={mentor} />
+            <div className="LoginRect">
+              <div>
+                <Link to="/">
+                  <FaArrowLeft className="arrow" />
+                </Link>
+              </div>
+              <h2 className="Lheading">MENTOR SIGN UP</h2>
 
-                   <form className="form1">
-                   <div className="name">
-                       <label className="label3">Name: </label>
-                       <input className="input3" type='text'/>
-                    </div>
-                    <div className="email">
-                       <label className="label1">E-mail: </label>
-                       <input className="input1" type='email' placeholder="xyz@gmail.com"/>
-                    </div>
-                    <div className="password">
-                       <label className="label2">Password: </label>
-                       <input className="input2" type='password'/>
-                    </div>
-                    <div className="confirmpassword">
-                       <label className="label4">Confirm<br/>Password: </label>
-                       <input className="input4" type='password'/>
-                    </div>
-                       <button className="btnLogin"><Link className="findlink" to='/BeMentor'>SIGNUP</Link></button>
-                   </form>
-                   
-               </div>
-               
+              <form className="form1">
+                <div className="name">
+                  <label className="label3">Name: </label>
+                  <input className="input3" type="text" />
+                </div>
+                <div className="email">
+                  <label className="label1">E-mail: </label>
+                  <input
+                    className="input1"
+                    type="email"
+                    placeholder="xyz@gmail.com"
+                  />
+                </div>
+                <div className="password">
+                  <label className="label2">Password: </label>
+                  <input className="input2" type="password" />
+                </div>
+                <div className="confirmpassword">
+                  <label className="label4">
+                    Confirm
+                    <br />
+                    Password:{" "}
+                  </label>
+                  <input className="input4" type="password" />
+                </div>
+                <button className="btnLogin">
+                  <Link className="findlink" to="/BeMentor">
+                    SIGNUP
+                  </Link>
+                </button>
+              </form>
             </div>
-           
-               <img className="container" src={hero}/>
-           </div>
-           <div className="signup">
-           <h4>Already Registered?</h4>
-           <button><Link className="register" to='/MentorLogin'>LOGIN</Link></button>
-           </div>
-        </section>
+          </div>
+
+          {/* eslint-disable-next-line */}
+          <img className="container" src={hero} />
+        </div>
+        <div className="signup">
+          <h4>Already Registered?</h4>
+          <button>
+            <Link className="register" to="/MentorLogin">
+              LOGIN
+            </Link>
+          </button>
+        </div>
+      </section>
     </MentorWrapper>
+  );
 }
 
 const MentorWrapper = styled.section`
@@ -56,7 +76,7 @@ const MentorWrapper = styled.section`
 .container
 {
    width:100%;
-   height:850px;
+   height:100vh;
    position:relative;
    z-index:-1;
    background-position: center;
@@ -90,7 +110,7 @@ const MentorWrapper = styled.section`
           max-height: 100%;
           width: auto;
           height: auto;
-          ${'' /* width:75%; */}
+          ${"" /* width:75%; */}
           width:60rem;
           height:80rem;
           right:3%;
@@ -264,7 +284,8 @@ const MentorWrapper = styled.section`
             font-weight:bold;
             font-size:1rem;
         }
-        ${'' /* .input1{
+        ${
+          "" /* .input1{
              top:32%;
         }
         .input2{
@@ -289,10 +310,13 @@ const MentorWrapper = styled.section`
             left:25%;
             right:25%;
             padding:15px 60px;
-        } */}
-        ${'' /* .findlink{
+        } */
+        }
+        ${
+          "" /* .findlink{
             font-size:1rem;
-        } */}
+        } */
+        }
 
 }
 
@@ -490,7 +514,8 @@ input{
             font-size:1rem;
         }
 
-        ${'' /* input{
+        ${
+          "" /* input{
             padding:10px 65px;
             position:absolute;
             left:37%;
@@ -524,7 +549,8 @@ input{
         }
         .findlink{
             font-size:1rem;
-        } */}
+        } */
+        }
         .signup{
             position:absolute;
             right:8%;
@@ -776,7 +802,7 @@ input{
 {
     .LoginRect{
     height:580px;
-    ${'' /* width:400px; */}
+    ${"" /* width:400px; */}
     background:white;
     position:absolute;
     border-radius:20px;
@@ -934,8 +960,6 @@ input{
            
         }
 }
-`
+`;
 
-export default MentorRegister
-
-
+export default MentorRegister;

@@ -1,32 +1,29 @@
-import React from 'react'
+// import React from 'react'
 
 export const links = [
   {
     id: 1,
-    text: 'Home',
-    url: '/',
+    text: "Home",
+    url: "/",
   },
   {
     id: 2,
-    text: 'About',
-    url: '/about',
+    text: "About",
+    url: "/about",
   },
   {
     id: 3,
-    text: 'Contact',
-    url: '/contact',
-  }
-//   {
-//     id: 4,
-//     text: 'MENTOR LOGIN',
-//     url: '/MentorLogin',
-//   },
-//   {
-//     id: 5,
-//     text: 'MENTEE LOGIN',
-//     url: '/MenteeLogin',
-//   },
-]
-
-
-
+    text: "Contact",
+    url: "/contact",
+  },
+  //   {
+  //     id: 4,
+  //     text: 'MENTOR LOGIN',
+  //     url: '/MentorLogin',
+  //   },
+  //   {
+  //     id: 5,
+  //     text: 'MENTEE LOGIN',
+  //     url: '/MenteeLogin',
+  //   },
+];
